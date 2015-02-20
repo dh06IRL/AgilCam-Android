@@ -1,0 +1,266 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:animateLayoutChanges="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <SurfaceView
+        android:id="@+id/surface"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
+
+    <View
+        android:id="@+id/center"
+        android:layout_centerInParent="true"
+        android:layout_width="10dp"
+        android:layout_height="1dp" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:background="@color/translucent_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/container_front"
+        android:layout_centerInParent="true"
+        android:background="@color/black_overlay"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <RelativeLayout
+        android:id="@+id/speed_holder"
+        android:background="@drawable/background_speed"
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Speed"
+            android:textSize="12sp"
+            android:layout_margin="4dp"
+            android:textStyle="bold"
+            android:textColor="@color/holo_blue_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/speed_text"
+            android:text="56"
+            android:textSize="20sp"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    <!--<TextView-->
+        <!--android:background="@drawable/background_speed"-->
+        <!--android:id="@+id/speed_text"-->
+        <!--android:text="56"-->
+        <!--android:textSize="20sp"-->
+        <!--android:padding="16dp"-->
+        <!--android:layout_margin="8dp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/start_record"
+        android:src="@android:drawable/ic_media_play"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/app_main_color_accent"
+        fab:fab_colorPressed="@color/app_main_color_dark"
+        fab:fab_colorRipple="@color/holo_blue_dark" />
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/videos"
+        android:src="@android:drawable/ic_menu_view"
+        android:layout_toLeftOf="@+id/start_record"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/app_main_color_accent"
+        fab:fab_colorPressed="@color/app_main_color_dark"
+        fab:fab_colorRipple="@color/holo_blue_dark" />
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/settings"
+        android:src="@android:drawable/ic_menu_edit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/app_main_color_accent"
+        fab:fab_colorPressed="@color/app_main_color_dark"
+        fab:fab_colorRipple="@color/holo_blue_dark" />
+
+    <LinearLayout
+        android:background="@drawable/background"
+        android:padding="12dp"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:background="@color/black"
+            android:layout_marginBottom="10dp"
+            android:layout_width="170dp"
+            android:layout_height="150dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="alt"
+                    android:textSize="12sp"
+                    android:textColor="@color/holo_blue_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/elevation_text"
+                        android:text="20"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="ft"
+                        android:layout_marginLeft="2dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/holo_blue_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="force"
+                    android:textSize="12sp"
+                    android:textColor="@color/holo_blue_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/g_force_text"
+                        android:text="1.04"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="g"
+                        android:layout_marginLeft="2dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/holo_blue_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="heading"
+                    android:textSize="12sp"
+                    android:textColor="@color/holo_blue_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/heading_text"
+                        android:text="329"
+                        android:textSize="16sp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/heading_text_text"
+                        android:text="NW"
+                        android:layout_marginLeft="2dp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textSize="12sp"
+                        android:textColor="@color/holo_blue_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.david.autodash.utils.SpeedometerGauge
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="400dp"
+        android:id="@+id/speedometer" />
+
+
+</RelativeLayout>

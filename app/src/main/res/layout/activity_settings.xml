@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="24dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <CheckBox
+        android:id="@+id/show_speed"
+        android:text="Show Speed"
+        android:layout_marginBottom="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/show_traffic"
+        android:text="Show Traffic"
+        android:layout_marginBottom="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:background="@color/black_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:id="@+id/map_type"
+        android:text="Map Type"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:background="@color/black_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+</LinearLayout>

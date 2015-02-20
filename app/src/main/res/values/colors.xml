@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="black_overlay">#D9000000</color>
+    <color name="translucent_white">#26ffffff</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="google_now">#E5E5E5</color>
+    <color name="google_now_dark">#6633b5e5</color>
+    <color name="card_text">#ff8d8d8d</color>
+    <color name="custom_red">#f20000</color>
+    <color name="custom_blue">#00E1FA</color>
+
+    <color name="google_now_background">#e5e5e5</color>
+    <color name="google_now_text_color">#878787</color>
+
+    <color name="graph_background">#1A000000</color>
+    <color name="dark_card">#292929</color>
+    <color name="dark_background">#1D1D1D</color>
+
+
+    <integer-array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+    </integer-array>
+
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
+
+
+    <color name="holo_blue_dark">#0099cc</color>
+    <color name="holo_yellow_dark">#ff8800</color>
+    <color name="holo_green_dark">#669900</color>
+    <color name="holo_purple_dark">#9933cc</color>
+    <color name="holo_red_dark">#cc0000</color>
+
+
+    <color name="map_black_overlay">#80000000</color>
+
+    <color name="uv_one">#7CB834</color>
+    <color name="uv_two">#7CB834</color>
+    <color name="uv_three">#F7B308</color>
+    <color name="uv_four">#F7B308</color>
+    <color name="uv_five">#F7B308</color>
+    <color name="uv_six">#EE8711</color>
+    <color name="uv_seven">#EE8711</color>
+    <color name="uv_eight">#E04028</color>
+    <color name="uv_nine">#E04028</color>
+    <color name="uv_ten">#E04028</color>
+    <color name="uv_eleven">#A85D98</color>
+
+    <color name="aqi_extreme">#990000</color>
+
+    <color name="second_grey">#ff999999</color>
+    <color name="card_white">#ffffffff</color>
+    <color name="card_shadow">#8c666666</color>
+
+    <color name="app_main_color">#32CD99</color>
+    <color name="app_main_color_dark">#28A47A</color>
+    <color name="app_main_color_accent">#FE9F33</color>
+</resources>
